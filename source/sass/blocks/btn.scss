@@ -1,10 +1,14 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
+  padding: 14px 20px;
+  justify-content: center;
+  text-transform: uppercase;
+  user-select: none;
   color: $color-default-white;
+  word-break: break-all;
+  line-height: normal;
 
-  background-color: $color-neon-blue;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
@@ -18,9 +22,5 @@
     opacity: 0.5;
 
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }
