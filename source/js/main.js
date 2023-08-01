@@ -2,13 +2,13 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {openCloseMenu} from './blocks/menu.js';
-import {swiper} from './blocks/page-swiper';
+import {swiper, swiperCatalog} from './blocks/page-swiper';
 import {playVideo} from './blocks/video';
 
 swiper;
 openCloseMenu();
 playVideo();
-
+swiperCatalog;
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

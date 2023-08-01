@@ -10,6 +10,10 @@
   @include vp-1199 {
     padding: 174px 45px 84px;
   }
+
+  @include vp-767 {
+    padding: 139px 15px 35px;
+  }
 }
 
 .hero__swiper-content--first {
@@ -103,6 +107,10 @@
     margin: 0 auto;
     margin-bottom: 51px;
   }
+
+  @include vp-767 {
+    margin-bottom: 113px;
+  }
 }
 
 .hero__text-wrapper h2 {
@@ -121,6 +129,12 @@
     text-align: center;
     margin-bottom: 13px;
   }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .hero__text-wrapper p {
@@ -135,6 +149,12 @@
   @include vp-1199 {
     margin: 0 auto;
     margin-bottom: 28px;
+  }
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -171,6 +191,11 @@
   @include vp-1199 {
     width: 206px;
   }
+
+  @include vp-767 {
+    padding: 18px 20px;
+    width: calc(100% - 110px);
+  }
 }
 
 .hero__video {
@@ -186,6 +211,10 @@
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 110px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -214,6 +243,8 @@
 }
 
 .hero__video-button {
+  margin: 0;
+  padding: 0;
   position: absolute;
   width: 56px;
   height: 56px;
@@ -225,6 +256,8 @@
   cursor: pointer;
   border: none;
   background-image: url("../img/hero/play-default.svg");
+  z-index: 2;
+  border-radius: 50%;
 
   &:disabled {
     background-image: url("../img/hero/play-disabled.svg");
@@ -263,6 +296,7 @@
   padding: 14px 20px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
   margin-right: 10px;
+  max-width: 200px;
 
   @include vp-1199 {
     display: none;
@@ -297,6 +331,11 @@
   width: 8px;
   height: 8px;
   box-shadow: 0 0 0 1px $color-default-white;
+
+  @include vp-767 {
+    width: 6px;
+    height: 6px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -318,6 +357,10 @@
     width: 442px;
     height: 365px;
     margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -354,5 +397,9 @@
     text-align: center;
     padding-top: 19px;
     margin-bottom: 164px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
