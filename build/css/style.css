@@ -3769,12 +3769,6 @@ button,
   margin-right: 12px;
 }
 
-.catalog__buttons-wrapper {
-  position: absolute;
-  right: 0;
-  top: 43px;
-}
-
 .catalog__background-image {
   position: absolute;
   right: 0;
@@ -3811,12 +3805,11 @@ button,
 }
 
 .training__wrapper {
-  padding: 0 120px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .training__wrapper {
-    padding: 3px 45px;
+    padding-top: 3px;
   }
 }
 @media (max-width: 767px) {
@@ -3826,13 +3819,15 @@ button,
 }
 
 .training__text-wrapper {
-  max-width: 1200px;
+  max-width: 1258px;
   margin-bottom: 27px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 @media (max-width: 1199px) {
   .training__text-wrapper {
-    max-width: 678px;
+    max-width: 700px;
+    padding: 0 11px;
   }
 }
 
@@ -4049,15 +4044,18 @@ button,
 
 .trainers-swiper {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1258px;
   margin-bottom: 31px;
+  padding: 0 30px;
 }
 @media (max-width: 1199px) {
   .trainers-swiper {
     max-width: 700px;
+    padding: 0 11px;
+    margin-bottom: 34px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .trainers-swiper {
     max-width: 290px;
   }
