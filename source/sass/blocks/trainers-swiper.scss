@@ -11,7 +11,9 @@
   }
 
   @include vp-767 {
-    max-width: 290px;
+    max-width: 320px;
+    padding: 0 15px;
+    margin-bottom: 29px;
   }
 }
 
@@ -38,6 +40,10 @@
     padding-top: 56px;
     margin-bottom: 24px;
   }
+
+  @include vp-767 {
+    padding-top: 38px;
+  }
 }
 
 .trainers-swiper__content h4 {
@@ -51,6 +57,12 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 18px; /* 100% */
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+    max-width: 170px;
   }
 }
 
@@ -73,6 +85,7 @@
   @include vp-767 {
     max-width: 290px;
     min-height: 385px;
+    padding: 20px;
   }
 }
 
@@ -84,6 +97,10 @@
   @include vp-1199 {
     margin-bottom: 15px;
   }
+}
+
+.trainers-swiper__slide-img img {
+  margin: 0 auto;
 }
 
 .trainers-swiper__person-wrapper {
@@ -139,6 +156,10 @@
     border: 1px solid rgba(2, 102, 193, 1);
     background-color: rgba(2, 102, 193, 1);
     fill: $color-default-white;
+  }
+
+  @include vp-767 {
+    margin-right: 12px;
   }
 }
 

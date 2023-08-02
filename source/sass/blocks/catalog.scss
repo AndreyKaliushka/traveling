@@ -26,6 +26,10 @@
   @include vp-1199 {
     max-width: 678px;
   }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .catalog__swiper-wrapper {
@@ -412,6 +416,20 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
   margin-right: 12px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+}
+
+.catalog__buttons-wrapper {
+  @include vp-767 {
+    position: absolute;
+    right: 0;
+    top: 43px;
+  }
 }
 
 .catalog__background-image {
