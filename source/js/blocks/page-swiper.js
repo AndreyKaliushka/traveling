@@ -35,4 +35,28 @@ const swiperCatalog = new Swiper('.catalog__swiper', {
   },
 });
 
-export {swiper, swiperCatalog};
+const swiperTrainers = new Swiper('.trainers-swiper', {
+  loop: false,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: '.trainers-swiper__button-next',
+    prevEl: '.trainers-swiper__button-prev',
+  },
+});
+
+export {swiper, swiperCatalog, swiperTrainers};

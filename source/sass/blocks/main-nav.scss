@@ -324,6 +324,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     padding-bottom: 70px;
+    z-index: 2;
   }
 
   @include vp-767 {
