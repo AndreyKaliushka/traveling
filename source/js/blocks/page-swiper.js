@@ -41,7 +41,7 @@ const swiperTrainers = new Swiper('.trainers-swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 3,
@@ -59,4 +59,28 @@ const swiperTrainers = new Swiper('.trainers-swiper', {
   },
 });
 
-export {swiper, swiperCatalog, swiperTrainers};
+const swiperReviews = new Swiper('.reviews__swiper', {
+  loop: false,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+});
+
+export {swiper, swiperCatalog, swiperTrainers, swiperReviews};
