@@ -3,19 +3,19 @@
 }
 
 .reviews__content {
-  padding: 6px 0 111px 100px;
+  padding: 6px 0 89px 100px;
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
 
   @include vp-1199 {
     max-width: 768px;
-    padding: 39px 0 50px 25px;
+    padding: 39px 0 28px 25px;
   }
 
   @include vp-767 {
     max-width: 767px;
-    padding: 63px 0 50px;
+    padding: 63px 0 18px;
   }
 }
 
@@ -113,6 +113,10 @@
 
 .reviews__swiper-wrapper {
   padding-bottom: 30px;
+
+  @include vp-767 {
+    padding-bottom: 0;
+  }
 }
 
 .reviews__slide {
