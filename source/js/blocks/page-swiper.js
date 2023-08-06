@@ -104,31 +104,6 @@ const swiperReviews = new Swiper('.reviews__swiper', {
   },
 });
 
-// const swiperAdvantages = () => {
-//   if (window.matchMedia('(min-width:1200px)')) {
-//     // eslint-disable-next-line no-new
-//     new Swiper('.advantages__swiper', {
-//       loop: true,
-
-//       breakpoints: {
-//         1200: {
-//           enabled: true,
-//           slidesPerView: 3,
-//           spaceBetween: 30,
-//           allowTouchMove: false,
-//           centeredSlides: true,
-//           initialSlide: 2,
-//         },
-//       },
-
-//       navigation: {
-//         nextEl: '.advantages__button-next',
-//         prevEl: '.advantages__button-prev',
-//       },
-//     });
-//   }
-// };
-
 const swiperAdvantages = () => {
   const breakpoint = window.matchMedia('(max-width:1199px)');
 
@@ -139,7 +114,7 @@ const swiperAdvantages = () => {
     if (breakpoint.matches === true) {
 
       // clean up old instances and inline styles when available
-	    if (mySwiper !== undefined) mySwiper.destroy( true, true );
+      if (mySwiper !== undefined) mySwiper.destroy( true, true );
 
       // or/and do nothing
       return;
