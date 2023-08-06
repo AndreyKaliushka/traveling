@@ -159,5 +159,31 @@ const swiperAdvantages = () => {
   breakpointChecker();
 };
 
+const swiperGallery = new Swiper('.gallery__swiper', {
+  loop: false,
 
-export {swiper, swiperCatalog, swiperTrainers, swiperReviews, swiperAdvantages};
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      allowTouchMove: true,
+    },
+    768: {
+      slidesPerView: 1.3,
+      spaceBetween: 6,
+      allowTouchMove: true,
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      allowTouchMove: false,
+    },
+  },
+
+  navigation: {
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev',
+  },
+});
+
+export {swiper, swiperCatalog, swiperTrainers, swiperReviews, swiperAdvantages, swiperGallery};

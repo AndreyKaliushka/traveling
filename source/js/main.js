@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {openCloseMenu} from './blocks/menu.js';
-import {swiper, swiperCatalog, swiperTrainers, swiperReviews, swiperAdvantages} from './blocks/page-swiper';
+import {swiper, swiperCatalog, swiperTrainers, swiperReviews, swiperAdvantages, swiperGallery} from './blocks/page-swiper';
 import {playVideo} from './blocks/video';
 
 swiper;
@@ -12,6 +12,7 @@ swiperCatalog;
 swiperTrainers;
 swiperReviews;
 swiperAdvantages();
+swiperGallery;
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
