@@ -8,7 +8,7 @@
   padding: 93px 0 0;
 
   @include vp-1199 {
-    max-width: 768px;
+    max-width: 1199px;
     padding: 28px 0 0;
   }
 
@@ -25,7 +25,8 @@
   align-items: center;
 
   @include vp-1199 {
-    max-width: 678px;
+    max-width: 1199px;
+    padding: 0 45px;
     margin-bottom: 18px;
   }
 
@@ -93,7 +94,8 @@
   margin-bottom: 46px;
 
   @include vp-1199 {
-    max-width: 678px;
+    max-width: 1199px;
+    padding: 0 45px;
     margin-bottom: 37px;
   }
 
@@ -114,7 +116,7 @@
   @include vp-1199 {
     font-size: 14px;
     line-height: 22px;
-    max-width: 395px;
+    max-width: 58.26%;
   }
 
   @include vp-767 {
@@ -142,8 +144,8 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 5px;
-  max-width: 579px;
-  min-height: 450px;
+  max-width: 75%;
+  min-height: initial;
 
   @include vp-767 {
     max-width: unset;
@@ -166,6 +168,10 @@
 .gallery__swiper-picture img {
   height: 100%;
   object-fit: cover;
+
+  @include vp-1199 {
+    width: 100%;
+  }
 
   @include vp-767 {
     width: 100%;

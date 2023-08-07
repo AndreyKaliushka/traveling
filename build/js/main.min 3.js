@@ -31,7 +31,7 @@ exports.openCloseMenu = openCloseMenu;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.swiperTrainers = exports.swiperReviews = exports.swiperCatalog = exports.swiperAdvantages = exports.swiper = void 0;
+exports.swiperTrainers = exports.swiperReviews = exports.swiperGallery = exports.swiperCatalog = exports.swiperAdvantages = exports.swiper = void 0;
 var _swiper = _interopRequireDefault(require("../vendor/swiper"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var swiper = new _swiper.default('.hero__swiper', {
@@ -176,6 +176,31 @@ var swiperAdvantages = function swiperAdvantages() {
   breakpointChecker();
 };
 exports.swiperAdvantages = swiperAdvantages;
+var swiperGallery = new _swiper.default('.gallery__swiper', {
+  loop: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      allowTouchMove: true
+    },
+    768: {
+      slidesPerView: 1.3,
+      spaceBetween: 6,
+      allowTouchMove: true
+    },
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+      allowTouchMove: false
+    }
+  },
+  navigation: {
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev'
+  }
+});
+exports.swiperGallery = swiperGallery;
 
 },{"../vendor/swiper":18}],3:[function(require,module,exports){
 "use strict";
@@ -221,6 +246,7 @@ _pageSwiper.swiperCatalog;
 _pageSwiper.swiperTrainers;
 _pageSwiper.swiperReviews;
 (0, _pageSwiper.swiperAdvantages)();
+_pageSwiper.swiperGallery;
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', function () {
