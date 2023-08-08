@@ -6,7 +6,7 @@
 .company-information__wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 66px 0 102px;
+  padding: 66px 0 104px;
   padding-left: calc(50vw - 600px);
   padding-right: calc(50vw - 600px);
   display: grid;
@@ -21,7 +21,7 @@
   }
 
   @include vp-767 {
-    padding: 64px 15px 30px;
+    padding: 64px 15px 9px;
   }
 }
 

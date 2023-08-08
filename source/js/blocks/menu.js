@@ -7,17 +7,19 @@ window.scrollLock = new ScrollLock();
 navMain.classList.remove('main-nav--nojs');
 
 const openCloseMenu = () => {
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-      window.scrollLock.disableScrolling();
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      window.scrollLock.enableScrolling();
-    }
-  });
+  if (document.body.contains(document.querySelector('.main-header'))) {
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        window.scrollLock.disableScrolling();
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+        window.scrollLock.enableScrolling();
+      }
+    });
+  }
 };
 
 document.addEventListener('click', (evt) => {
