@@ -60,6 +60,8 @@
 }
 
 .main-footer__phone-number a {
+  color: $color-dark-grey;
+
   &:disabled {
     color: rgba(2, 102, 193, 0.8);
   }

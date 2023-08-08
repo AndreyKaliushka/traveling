@@ -1,4 +1,4 @@
-import '../vendor/leaflet';
+import L from '../vendor/leaflet';
 
 const map = L.map('map', {
   scrollWheelZoom: false,
