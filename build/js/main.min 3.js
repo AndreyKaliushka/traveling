@@ -33,7 +33,7 @@ exports.openCloseMenu = void 0;
 var _scrollLock = require("../utils/scroll-lock");
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var header = document.querySelector('.main-header');
+var body = document.querySelector('.container');
 window.scrollLock = new _scrollLock.ScrollLock();
 navMain.classList.remove('main-nav--nojs');
 var openCloseMenu = function openCloseMenu() {
@@ -50,16 +50,6 @@ var openCloseMenu = function openCloseMenu() {
   });
 };
 exports.openCloseMenu = openCloseMenu;
-document.addEventListener('click', function (evt) {
-  var click = evt.composedPath().includes(header);
-  if (!click) {
-    if (navMain.classList.contains('main-nav--opened')) {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      window.scrollLock.enableScrolling();
-    }
-  }
-});
 
 },{"../utils/scroll-lock":18}],3:[function(require,module,exports){
 "use strict";

@@ -7,7 +7,6 @@ import {playVideo} from './blocks/video';
 import {marker, map} from './blocks/map';
 
 swiper;
-openCloseMenu();
 playVideo();
 swiperCatalog;
 swiperTrainers;
@@ -16,6 +15,7 @@ swiperAdvantages();
 swiperGallery;
 marker;
 map;
+openCloseMenu();
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
