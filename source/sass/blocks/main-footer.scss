@@ -52,6 +52,7 @@
   font-weight: 600;
   line-height: 18px;
   margin-left: auto;
+  max-width: 150px;
 
   @include vp-1199 {
     display: none;

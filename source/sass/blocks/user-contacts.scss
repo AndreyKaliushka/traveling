@@ -1,0 +1,247 @@
+.user-contacts {
+  background-repeat: no-repeat;
+  background-color: #006400;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  background-image: url("../img/user-contacts/user-contacts-desktop.jpg");
+
+  @include retina {
+    background-image: url("../img/user-contacts/user-contacts-desktop@2x.jpg");
+  }
+
+  @include vp-1199 {
+    background-image: url("../img/user-contacts/user-contacts-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/user-contacts/user-contacts-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/user-contacts/user-contacts-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/user-contacts/user-contacts-mobile@2x.jpg");
+    }
+  }
+}
+
+.user-contacts__wrapper {
+  max-width: 1440px;
+  padding: 312px 0 307px;
+  margin: 0 auto;
+  max-width: 978px;
+
+  @include vp-1199 {
+    padding: 195px 236px 183px 237px;
+    max-width: unset;
+  }
+
+  @include vp-767 {
+    padding: 181px 15px 175px;
+  }
+}
+
+.user-contacts__wrapper h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  color: $color-default-white;
+  margin-bottom: 16px;
+  padding-right: 18px;
+
+  @include vp-1199 {
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 13px;
+  }
+}
+
+.user-contacts__wrapper p {
+  margin: 0;
+  padding: 0;
+  color: $color-default-white;
+  text-align: center;
+  margin-bottom: 42px;
+  padding-right: 18px;
+
+  @include vp-1199 {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+}
+
+.user-contacts__form {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.user-contacts__form-wrapper {
+  display: grid;
+  grid-template-columns: 340px 340px 238px;
+  gap: 30px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+    margin: 0 auto;
+    padding: 0 16px 0 14px
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.user-contacts__input {
+  max-width: 340px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199 {
+    max-width: unset;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}
+
+.user-contacts__input input {
+  width: 100%;
+  padding: 22px 30px;
+  line-height: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: $color-default-white;
+  border: none;
+
+  &::placeholder {
+    color: $color-dark-grey;
+    opacity: 0.5;
+    line-height: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+    &:disabled {
+      color: var(--additional-20, rgba(2, 102, 193, 0.10));
+    }
+
+    @include vp-1199 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+    }
+  }
+
+  @include vp-1199 {
+    padding: 15px 15px;
+  }
+
+  &:hover {
+    padding: 21px 29px;
+    border: 1px solid rgba(2, 102, 193, 1);
+
+    @include vp-1199 {
+      padding: 14px 14px;
+    }
+
+    &::placeholder {
+      color: rgba(2, 102, 193, 1);
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    padding: 21px 29px;
+    border: 1px solid rgba(28, 51, 116, 1);
+
+    @include vp-1199 {
+      padding: 14px 14px;
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:active {
+    outline: none;
+    padding: 21px 29px;
+    border: 1px solid rgba(28, 51, 116, 1);
+
+    @include vp-1199 {
+      padding: 14px 14px;
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.user-contacts__button {
+  padding: 20px 20px;
+  width: 238px;
+  font-weight: 500;
+  text-transform: unset;
+  line-height: 16px;
+  align-items: center;
+
+  &:disabled {
+    opacity: 0.10;
+  }
+
+  &:hover {
+    color: rgba(28, 51, 116, 1);
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgba(28, 51, 116, 1);
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: rgba(28, 51, 116, 1);
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgba(28, 51, 116, 1);
+  }
+
+  &:active {
+    box-shadow: none;
+    color: $color-default-white;
+    background-color: rgba(28, 51, 116, 1);
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 21px;
+    margin-top: 9px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-top: 1px;
+    padding: 18px;
+  }
+}

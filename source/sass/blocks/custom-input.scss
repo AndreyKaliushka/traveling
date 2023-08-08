@@ -75,22 +75,42 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      padding: 21px 29px;
+      border: 1px solid rgba(255, 18, 31, 1);
+
+      @include vp-1199 {
+        padding: 14px 14px;
+      }
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        padding: 21px 29px;
+        border: 1px solid rgba(255, 18, 31, 1);
+
+        @include vp-1199 {
+          padding: 14px 14px;
+        }
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      padding: 21px 29px;
+      border: 1px solid #22b259;
+
+      @include vp-1199 {
+        padding: 14px 14px;
+      }
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        padding: 21px 29px;
+        border: 1px solid rgba(#22b259, 0.5);
+
+        @include vp-1199 {
+          padding: 14px 14px;
+        }
       }
     }
   }

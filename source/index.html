@@ -1189,7 +1189,73 @@
         </section>
 
         <section class="user-contacts">
+          <div class="user-contacts__wrapper">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+            <div class="user-contacts__form" data-form-validate="data-form-validate" data-callback="base">
+              <form method="post" action="https://echo.htmlacademy.ru/">
+                <div class="user-contacts__form-wrapper">
+                  <div class="custom-input user-contacts__input" data-validate-type="text" data-limitation="name" data-required="data-required">
+                    <input type="text" name="user-name-1" placeholder="Как к вам обращаться?" aria-label="Введите ваше имя."/>
+                  </div>
 
+                  <div class="custom-input user-contacts__input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                    <input type="tel" name="user-phone" placeholder="Телефон" aria-label="Введите ваш телефон."/>
+                  </div>
+                  <button class="user-contacts__button btn" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="company-information">
+          <div class="company-information__wrapper">
+            <div class="company-information__contacts-wrapper">
+              <div class="company-information__text-wrapper">
+                <h2>Контакты</h2>
+                <h3>Контакты</h3>
+                <p>
+                  Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости.
+                  Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.
+                </p>
+              </div>
+              <ul class="company-information__list">
+                <li class="company-information__list-item">
+                  <svg class="company-information__list-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <div class="company-information__item-wrapper">
+                    <span>Телефон</span>
+                    <a href="tel:8 983 745 45 45" aria-label="наш номер телефона 8 983 745 45 45">8 983 745 45 45</a>
+                  </div>
+                </li>
+
+                <li class="company-information__list-item">
+                  <svg class="company-information__list-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <div class="company-information__item-wrapper">
+                    <span>E-mail</span>
+                    <a href="mailto:info@lifetour.com" aria-label="наш E-mail">info@lifetour.com</a>
+                  </div>
+                </li>
+
+                <li class="company-information__list-item">
+                  <svg class="company-information__list-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#pin-big"></use>
+                  </svg>
+                  <div class="company-information__item-wrapper">
+                    <span>Адрес</span>
+                    <p>г. Москва, пр-т Мира,<br> д. 14, офис 101</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="company-information__map-wrapper">
+              <div class="company-information__map" id="map"></div>
+            </div>
+          </div>
         </section>
       </main>
 

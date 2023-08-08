@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {openCloseMenu} from './blocks/menu.js';
 import {swiper, swiperCatalog, swiperTrainers, swiperReviews, swiperAdvantages, swiperGallery} from './blocks/page-swiper';
 import {playVideo} from './blocks/video';
+import {marker, map} from './blocks/map';
 
 swiper;
 openCloseMenu();
@@ -13,6 +14,8 @@ swiperTrainers;
 swiperReviews;
 swiperAdvantages();
 swiperGallery;
+marker;
+map;
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

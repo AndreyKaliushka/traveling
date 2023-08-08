@@ -225,6 +225,7 @@
 .main-nav__phone-number {
   box-sizing: border-box;
   order: 3;
+  max-width: 150px;
 
   @include vp-1199 {
     order: 3;
