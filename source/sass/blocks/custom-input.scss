@@ -79,7 +79,7 @@
       border: 1px solid rgba(255, 18, 31, 1);
 
       @include vp-1199 {
-        padding: 14px 14px;
+        padding: 21px 29px;
       }
 
       &:focus,
@@ -88,7 +88,7 @@
         border: 1px solid rgba(255, 18, 31, 1);
 
         @include vp-1199 {
-          padding: 14px 14px;
+          padding: 21px 29px;
         }
       }
     }
@@ -99,7 +99,7 @@
       padding: 22px 30px;
 
       @include vp-1199 {
-        padding: 14px 14px;
+        padding: 22px 30px;
       }
 
       &:focus,
@@ -107,7 +107,7 @@
         padding: 21px 29px;
 
         @include vp-1199 {
-          padding: 14px 14px;
+          padding: 21px 29px;
         }
       }
     }
