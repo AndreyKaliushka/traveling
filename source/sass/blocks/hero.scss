@@ -18,6 +18,8 @@
 
   @include vp-767 {
     padding: 139px 15px 35px;
+    height: 100%;
+    min-height: 568px;
   }
 }
 
@@ -97,6 +99,12 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+
+  @include vp-767 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero__text-wrapper {
@@ -114,7 +122,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 113px;
+    margin-bottom: 0;
   }
 }
 
@@ -295,6 +303,10 @@
   margin: 0;
   padding: 0;
   align-items: center;
+
+  @include vp-767 {
+    margin-top: auto;
+  }
 }
 
 .hero__extra-information {
