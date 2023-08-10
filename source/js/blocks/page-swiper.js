@@ -2,9 +2,9 @@
 import Swiper from '../vendor/swiper';
 
 const setHeroSwiper = () => {
-  if (document.body.contains(document.querySelector('.hero__swiper'))) {
+  if (document.body.contains(document.querySelector('.hero__swiper-wrapper'))) {
     // eslint-disable-next-line no-new
-    new Swiper('.hero__swiper', {
+    new Swiper('.hero__swiper-wrapper', {
       // Optional parameters
       loop: true,
 
@@ -30,9 +30,9 @@ const setHeroSwiper = () => {
 };
 
 const setCatalogSwiper = () => {
-  if (document.body.contains(document.querySelector('.catalog__swiper'))) {
+  if (document.body.contains(document.querySelector('.catalog__swiper-wrapper'))) {
     // eslint-disable-next-line no-new
-    new Swiper('.catalog__swiper', {
+    new Swiper('.catalog__swiper-wrapper', {
       loop: false,
 
       breakpoints: {
@@ -63,8 +63,8 @@ const setCatalogSwiper = () => {
 
 
 const setTrainersSwiper = () => {
-  if (document.body.contains(document.querySelector('.trainers-swiper'))) {
-    new Swiper('.trainers-swiper', {
+  if (document.body.contains(document.querySelector('.trainers-swiper__wrapper'))) {
+    new Swiper('.trainers-swiper__wrapper', {
       loop: false,
 
       breakpoints: {
@@ -94,8 +94,8 @@ const setTrainersSwiper = () => {
 };
 
 const setReviewsSwiper = () => {
-  if (document.body.contains(document.querySelector('.reviews__swiper'))) {
-    new Swiper('.reviews__swiper', {
+  if (document.body.contains(document.querySelector('.reviews__swiper-wrapper'))) {
+    new Swiper('.reviews__swiper-wrapper', {
       loop: false,
 
       breakpoints: {
@@ -127,7 +127,7 @@ const setReviewsSwiper = () => {
 
 
 const setAdvantagesSwiper = () => {
-  if (document.body.contains(document.querySelector('.advantages__swiper'))) {
+  if (document.body.contains(document.querySelector('.advantages__swiper-wrapper'))) {
     const swiperAdvantages = () => {
       const breakpoint = window.matchMedia('(max-width:1199px)');
 
@@ -156,7 +156,7 @@ const setAdvantagesSwiper = () => {
 
       const enableSwiper = () => {
 
-        mySwiper = new Swiper('.advantages__swiper', {
+        mySwiper = new Swiper('.advantages__swiper-wrapper', {
           loop: true,
           breakpoints: {
             1200: {
@@ -188,8 +188,8 @@ const setAdvantagesSwiper = () => {
 };
 
 const setGallerySwiper = () => {
-  if (document.body.contains(document.querySelector('.gallery__swiper'))) {
-    new Swiper('.gallery__swiper', {
+  if (document.body.contains(document.querySelector('.gallery__swiper-wrapper'))) {
+    new Swiper('.gallery__swiper-wrapper', {
       loop: false,
 
       breakpoints: {

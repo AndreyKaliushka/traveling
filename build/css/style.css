@@ -3991,34 +3991,34 @@ button,
   }
 }
 
-.catalog__swiper {
+.catalog__swiper-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 52px;
 }
 @media (max-width: 1199px) {
-  .catalog__swiper {
+  .catalog__swiper-wrapper {
     max-width: unset;
   }
 }
 @media (max-width: 767px) {
-  .catalog__swiper {
+  .catalog__swiper-wrapper {
     margin-bottom: 29px;
   }
 }
 
-.catalog__swiper-wrapper {
+.catalog__swiper {
   max-width: 1200px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
-  .catalog__swiper-wrapper {
+  .catalog__swiper {
     max-width: unset;
     padding-left: 7px;
   }
 }
 @media (max-width: 767px) {
-  .catalog__swiper-wrapper {
+  .catalog__swiper {
     padding: 0;
     max-width: 767px;
   }
@@ -4856,34 +4856,34 @@ button,
   }
 }
 
-.trainers-swiper {
+.trainers-swiper__wrapper {
   margin: 0 auto;
   max-width: 1258px;
   margin-bottom: 31px;
   padding: 0 30px;
 }
 @media (max-width: 1199px) {
-  .trainers-swiper {
+  .trainers-swiper__wrapper {
     max-width: 1199px;
     padding: 0 30px;
     margin-bottom: 34px;
   }
 }
 @media (max-width: 767px) {
-  .trainers-swiper {
+  .trainers-swiper__wrapper {
     max-width: 100%;
     padding: 0;
     margin-bottom: 29px;
   }
 }
 
-.trainers-swiper__wrapper {
+.trainers-swiper {
   margin: 0 auto;
   padding: 0;
   padding-bottom: 20px;
 }
 @media (max-width: 1199px) {
-  .trainers-swiper__wrapper {
+  .trainers-swiper {
     padding-bottom: 8px;
   }
 }
@@ -5296,20 +5296,20 @@ button,
   }
 }
 
-.reviews__swiper {
+.reviews__swiper-wrapper {
   max-width: 1340px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 120px;
 }
 @media (max-width: 1199px) {
-  .reviews__swiper {
+  .reviews__swiper-wrapper {
     padding-right: 45px;
     max-width: 1109px;
   }
 }
 @media (max-width: 767px) {
-  .reviews__swiper {
+  .reviews__swiper-wrapper {
     max-width: 767px;
     padding: 0 15px;
   }
@@ -5403,11 +5403,11 @@ button,
   }
 }
 
-.reviews__swiper-wrapper {
+.reviews__swiper {
   padding-bottom: 30px;
 }
 @media (max-width: 767px) {
-  .reviews__swiper-wrapper {
+  .reviews__swiper {
     padding-bottom: 0;
   }
 }
@@ -5648,21 +5648,21 @@ button,
   }
 }
 
-.advantages__swiper {
+.advantages__swiper-wrapper {
   width: 100%;
   padding: 0 120px;
 }
 @media (max-width: 1199px) {
-  .advantages__swiper {
+  .advantages__swiper-wrapper {
     padding: 0;
   }
 }
 
-.advantages__swiper-wrapper {
+.advantages__swiper {
   margin-bottom: 71px;
 }
 @media (max-width: 1199px) {
-  .advantages__swiper-wrapper {
+  .advantages__swiper {
     margin: 0 auto;
     width: 100%;
     display: -webkit-box;
@@ -5675,7 +5675,7 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .advantages__swiper-wrapper {
+  .advantages__swiper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5892,7 +5892,7 @@ button,
   }
 }
 
-.gallery__swiper {
+.gallery__swiper-wrapper {
   width: 100%;
 }
 

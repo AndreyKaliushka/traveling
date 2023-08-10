@@ -84,7 +84,7 @@
   }
 }
 
-.advantages__swiper {
+.advantages__swiper-wrapper {
   width: 100%;
   padding: 0 120px;
 
@@ -93,7 +93,7 @@
   }
 }
 
-.advantages__swiper-wrapper {
+.advantages__swiper {
   margin-bottom: 71px;
 
   @include vp-1199 {
