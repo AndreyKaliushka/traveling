@@ -4146,6 +4146,11 @@ button,
     max-width: 47.78%;
   }
 }
+@media (min-width: 1000px) {
+  .catalog__swiper-slide {
+    max-width: 50%;
+  }
+}
 @media (max-width: 767px) {
   .catalog__swiper-slide {
     min-width: 290px;

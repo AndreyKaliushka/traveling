@@ -133,6 +133,10 @@
     max-width: 47.78%;
   }
 
+  @media (min-width: 1000px) {
+    max-width: 50%;
+  }
+
   @include vp-767 {
     min-width: 290px;
     max-width: 100%;
