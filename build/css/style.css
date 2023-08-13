@@ -2188,12 +2188,6 @@ button,
   min-height: inherit;
 }
 
-.main-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
 .swiper-button {
   width: 37px;
   height: 35px;
