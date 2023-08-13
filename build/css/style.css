@@ -3212,6 +3212,10 @@ button,
     margin: 0;
     padding: 0;
     padding-top: 5px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 233px;
+    overflow: auto;
   }
 }
 @media (max-width: 767px) {
