@@ -3,13 +3,7 @@
   min-width: 320px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 200px;
-
-  @include vp-1199 {
-    padding-bottom: 218px;
-  }
-
-  @include vp-767 {
-    padding-bottom: 278px;
-  }
+  display: flex;
+	flex-direction: column;
+	min-height: inherit;
 }

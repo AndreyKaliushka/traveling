@@ -39,6 +39,12 @@ a {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
 img,
 video {
   display: block;

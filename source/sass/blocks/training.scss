@@ -112,9 +112,11 @@
   line-height: 21px;
   margin: 0 auto;
   margin-bottom: 40px;
-  max-width: 1200px;
+  max-width: 1260px;
+  padding: 0 30px;
 
   @include vp-1199 {
+    padding: 0;
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 41px;
@@ -151,9 +153,10 @@
 .training__description-wrapper {
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 29px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1260px;
+  padding: 0 30px;
 
   @include vp-1199 {
     max-width: 678px;
@@ -162,6 +165,7 @@
     column-gap: 31px;
     align-items: flex-start;
     margin: 0;
+    padding: 0;
 
     &::after {
       content: "";

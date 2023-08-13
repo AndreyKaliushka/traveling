@@ -585,7 +585,7 @@ template {
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.35;
+  opacity: 0.1;
   cursor: auto;
   pointer-events: none;
 }
@@ -1983,6 +1983,19 @@ a {
   text-decoration: none;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 img,
 video {
   display: block;
@@ -2165,17 +2178,20 @@ button,
   min-width: 320px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: inherit;
 }
-@media (max-width: 1199px) {
-  .container {
-    padding-bottom: 218px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    padding-bottom: 278px;
-  }
+
+.main-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .swiper-button {
@@ -3178,7 +3194,7 @@ button,
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 47px;
     z-index: 2;
   }
 }
@@ -3210,29 +3226,37 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    padding: 0;
-    padding-top: 5px;
+    padding: 4px 0 0 1px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    height: 233px;
+    height: 256px;
     overflow: auto;
   }
 }
 @media (max-width: 767px) {
   .main-nav--opened .main-nav__list {
-    padding-top: 10px;
+    height: 227px;
+    padding: 0;
+    padding-top: 11px;
   }
 }
 
 .main-nav--opened .main-nav__list-item {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   margin-left: -7px;
+}
+@media (max-width: 767px) {
+  .main-nav--opened .main-nav__list-item {
+    margin-bottom: 16px;
+  }
 }
 
 .main-footer {
   width: 100%;
-  position: absolute;
   bottom: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .main-footer__container {
@@ -3257,7 +3281,7 @@ button,
 }
 @media (max-width: 1199px) {
   .main-footer__container {
-    max-width: 1199px;
+    max-width: 768px;
     padding: 42px 44px 40px 45px;
   }
 }
@@ -4681,10 +4705,12 @@ button,
   line-height: 21px;
   margin: 0 auto;
   margin-bottom: 40px;
-  max-width: 1200px;
+  max-width: 1260px;
+  padding: 0 30px;
 }
 @media (max-width: 1199px) {
   .training__description h6 {
+    padding: 0;
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 41px;
@@ -4726,9 +4752,10 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 29px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1260px;
+  padding: 0 30px;
 }
 @media (max-width: 1199px) {
   .training__description-wrapper {
@@ -4743,6 +4770,7 @@ button,
         -ms-flex-align: start;
             align-items: flex-start;
     margin: 0;
+    padding: 0;
   }
   .training__description-wrapper::after {
     content: "";
@@ -5851,8 +5879,9 @@ button,
 }
 
 .gallery__headings-wrapper {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
   text-align: start;
   margin-bottom: 23px;
   -webkit-box-align: center;
@@ -5930,7 +5959,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1200px;
+  max-width: 1260px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5939,6 +5968,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 46px;
+  padding: 0 30px;
 }
 @media (max-width: 1199px) {
   .gallery__content {
@@ -6430,11 +6460,11 @@ button,
 }
 
 .company-information__wrapper {
-  max-width: 1440px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 66px 0 104px;
-  padding-left: calc(50vw - 600px);
-  padding-right: calc(50vw - 600px);
+  padding-left: 30px;
+  padding-right: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr auto;

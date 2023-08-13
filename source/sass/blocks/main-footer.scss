@@ -1,7 +1,7 @@
 .main-footer {
   width: 100%;
-  position: absolute;
   bottom: 0;
+  flex: 0 0 auto;
 }
 
 .main-footer__container {
@@ -17,7 +17,7 @@
   }
 
   @include vp-1199 {
-    max-width: 1199px;
+    max-width: 768px;
     padding: 42px 44px 40px 45px;
   }
 

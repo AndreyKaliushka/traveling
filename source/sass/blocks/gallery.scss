@@ -18,8 +18,9 @@
 }
 
 .gallery__headings-wrapper {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
   text-align: start;
   margin-bottom: 23px;
   align-items: center;
@@ -87,11 +88,12 @@
 
 .gallery__content {
   display: flex;
-  max-width: 1200px;
+  max-width: 1260px;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
   margin-bottom: 46px;
+  padding: 0 30px;
 
   @include vp-1199 {
     max-width: 1199px;

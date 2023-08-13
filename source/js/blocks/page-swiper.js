@@ -199,7 +199,7 @@ const setGallerySwiper = () => {
           allowTouchMove: true,
         },
         768: {
-          slidesPerView: 1.3,
+          slidesPerView: 1.331,
           spaceBetween: 6,
           allowTouchMove: true,
         },

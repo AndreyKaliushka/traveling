@@ -321,7 +321,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 47px;
     z-index: 2;
   }
 
@@ -341,19 +341,24 @@
     justify-content: flex-start;
     flex-direction: column;
     margin: 0;
-    padding: 0;
-    padding-top: 5px;
+    padding: 4px 0 0 1px;
     flex-wrap: nowrap;
-    height: 233px;
+    height: 256px;
     overflow: auto;
   }
 
   @include vp-767 {
-    padding-top: 10px;
+    height: 227px;
+    padding: 0;
+    padding-top: 11px;
   }
 }
 
 .main-nav--opened .main-nav__list-item {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   margin-left: -7px;
+
+  @include vp-767 {
+    margin-bottom: 16px;
+  }
 }
