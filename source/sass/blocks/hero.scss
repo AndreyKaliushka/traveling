@@ -1,5 +1,16 @@
 .hero__swiper-slide {
   height: initial;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0.00) 100%);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  }
 }
 
 .hero__swiper-content {
@@ -113,7 +124,7 @@
   padding: 0;
   margin-bottom: 150px;
   position: inherit;
-  z-index: 2;
+  z-index: 3;
 
   @include vp-1199 {
     text-align: center;
@@ -218,6 +229,7 @@
   position: absolute;
   top: 119px;
   right: 0;
+  z-index: 2;
 
   @include vp-1199 {
     display: block;
@@ -303,6 +315,8 @@
   margin: 0;
   padding: 0;
   align-items: center;
+  z-index: 2;
+  position: relative;
 
   @include vp-767 {
     margin-top: auto;
@@ -368,6 +382,7 @@
   height: 459px;
   right: 0;
   top: 20px;
+  z-index: 2;
 
   @include vp-1199 {
     position: relative;
@@ -410,6 +425,7 @@
   position: absolute;
   top: 119px;
   right: 0;
+  z-index: 2;
 
   @include vp-1199 {
     display: block;
