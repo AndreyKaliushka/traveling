@@ -7,19 +7,20 @@ import {marker, map} from './blocks/map';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
+  setHeroSwiper();
+  playVideo();
+  setCatalogSwiper();
+  setTrainersSwiper();
+  setReviewsSwiper();
+  setAdvantagesSwiper();
+  setGallerySwiper();
+  marker;
+  map;
+  openCloseMenu();
+
   window.addEventListener('load', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    setHeroSwiper();
-    playVideo();
-    setCatalogSwiper();
-    setTrainersSwiper();
-    setReviewsSwiper();
-    setAdvantagesSwiper();
-    setGallerySwiper();
-    marker;
-    map;
-    openCloseMenu();
   });
 });
